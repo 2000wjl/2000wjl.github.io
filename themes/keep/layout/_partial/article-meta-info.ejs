@@ -3,6 +3,11 @@ const ami_is_updated = articleObject.date !== articleObject.updated
 %>
 <div class="article-meta-info">
     <span class="article-date article-meta-item">
+        <i class="fas fa-file-pen"></i>&nbsp;
+        <span class="pc"><%= date(articleObject.date, is_post() ? 'YYYY-MM-DD HH:mm:ss' : 'YYYY-MM-DD') %></span>
+        <span class="mobile"><%= date(articleObject.date, is_post() ? 'YYYY-MM-DD HH:mm' : 'YYYY-MM-DD') %></span>
+    </span>
+    <!-- <span class="article-date article-meta-item">
         <% if(ami_is_updated) { %>
             <i class="fa-regular fa-calendar-plus"></i>&nbsp;
         <% } else { %>
@@ -10,13 +15,13 @@ const ami_is_updated = articleObject.date !== articleObject.updated
         <% } %>
         <span class="pc"><%= date(articleObject.date, is_post() ? 'YYYY-MM-DD HH:mm:ss' : 'YYYY-MM-DD') %></span>
         <span class="mobile"><%= date(articleObject.date, is_post() ? 'YYYY-MM-DD HH:mm' : 'YYYY-MM-DD') %></span>
-    </span>
-    <% if (ami_is_updated) { %>
+    </span> -->
+    <!-- <% if (ami_is_updated) { %>
         <span class="article-update-date article-meta-item">
         <i class="fas fa-file-pen"></i>&nbsp;
         <span class="pc"><%= date(articleObject.updated, 'YYYY-MM-DD HH:mm:ss') %></span>
     </span>
-    <% } %>
+    <% } %> -->
     <% if (articleObject.categories.length) { %>
         <span class="article-categories article-meta-item">
             <i class="fas fa-folder"></i>&nbsp;
