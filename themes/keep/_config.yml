@@ -25,7 +25,7 @@ style:
   # Your blog website logo image
   # You can use local image, image external link or don’t fill
   # logo: /images/logo.svg
-  logo: https://ae01.alicdn.com/kf/U062ad107ac604106bf77342c6219e2f9Z.jpg
+  # logo: https://ae01.alicdn.com/kf/U062ad107ac604106bf77342c6219e2f9Z.jpg
 
   # Favicon (You can use local image or image external link)
   favicon: https://ae01.alicdn.com/kf/U062ad107ac604106bf77342c6219e2f9Z.jpg
