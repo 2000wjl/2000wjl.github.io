@@ -67,7 +67,7 @@ style:
     font_color:
 
     # If enable hitokoto, first screen description is different every time when you enter the site
-    hitokoto: true  # Option values: true | false
+    hitokoto: false  # Option values: true | false
 
   # Page scroll style settings
   scroll:
