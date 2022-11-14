@@ -103,7 +103,7 @@ social_contact:
     # at the same time change your link to the image link.
     # e.g. [ weixin: img | https://x.com/images/wechat.png ] or [ weixin: img | ./images/wechat.png ]
     github:  https://github.com/zyhwjl2022/        # GitHub
-    weixin: img | https://https://zyhwjl-1257871283.cos.ap-shanghai.myqcloud.com/images/forever/%E6%B7%BB%E5%8A%A0%E6%88%91%E4%B8%BA%E5%A5%BD%E5%8F%8B.png
+    weixin: img | https://zyhwjl-1257871283.cos.ap-shanghai.myqcloud.com/images/forever/%E6%B7%BB%E5%8A%A0%E6%88%91%E4%B8%BA%E5%A5%BD%E5%8F%8B.png
     qq: http://wpa.qq.com/msgrd?v=3&uin=1464819348&site=qq&menu=yes             # QQ
     weibo:          # WeiBo
     zhihu:           # ZhiHu
