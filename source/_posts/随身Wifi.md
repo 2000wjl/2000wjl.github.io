@@ -63,3 +63,37 @@ OpenWrt非常强，对于软路由或者矿渣硬路由来说都是相当不错�
 1. 重复1、2
 2. 执行刷机包的flash.bat(Windows)
 3. 重复7
+
+#### Debian相关命令
+
+###### 开机关灯开usb共享网络
+
+```shell
+#创建或修改/etc/rc.local并赋予可执行权限
+#启动服务systemctl start rc.local
+
+#!/bin/bash
+sudo echo none> /sys/class/leds/blue\:wifi_tx/trigger
+sudo echo none > /sys/class/leds/green\:wifi_rx/trigger
+sudo nmcli c up usb	#usb为名称
+```
+
+###### 定时任务
+
+```shell
+#修改/etc/crontab文件
+
+1 5 * * * root curl http://192.168.1.1/boaform/admin/formReboot >> /dev/null 2>&1
+0 5 * * * root curl "http://192.168.1.1/boaform/admin/formLogin" --data-raw "username2=user&psd2=&username1=user&psd1=b4u5ud7g&csrfmiddlewaretoken=KbyUmhTLMpYj7CD2di7JKP1P3qmLlkPt&username=user&psd=b4u5ud7g" >> /dev/null 2>&1
+10 8,20 * * * root python3 /root/amar/jlwang7.py >> /root/amar/logTest.txt 2>&1
+
+#重启服务
+systemctl restart cron
+```
+
+安装python-pip
+
+```shell
+apt-get install python-pip -y
+```
+
