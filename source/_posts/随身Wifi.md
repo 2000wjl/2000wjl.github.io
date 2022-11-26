@@ -84,8 +84,8 @@ sudo nmcli c up usb	#usb为名称
 #修改/etc/crontab文件
 
 1 5 * * * root curl http://192.168.1.1/boaform/admin/formReboot >> /dev/null 2>&1
-0 5 * * * root curl "http://192.168.1.1/boaform/admin/formLogin" --data-raw "username2=user&psd2=&username1=user&psd1=b4u5ud7g&csrfmiddlewaretoken=KbyUmhTLMpYj7CD2di7JKP1P3qmLlkPt&username=user&psd=b4u5ud7g" >> /dev/null 2>&1
-10 8,20 * * * root python3 /root/amar/jlwang7.py >> /root/amar/logTest.txt 2>&1
+0 5 * * * root curl "http://192.168.1.1/boaform/admin/formLogin" --data-raw "xxx" >> /dev/null 2>&1
+10 8,20 * * * root python3 /root/xx.py >> /root/amar/logTest.txt 2>&1
 
 #重启服务
 systemctl restart cron
