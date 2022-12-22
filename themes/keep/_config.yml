@@ -188,7 +188,7 @@ website_count:
     enable: true     # Option values: true | false
     site_uv: true    # Option values: true | false
     site_pv: true    # Option values: true | false
-    page_pv: true    # Option values: true | false
+    page_pv: false    # Option values: true | false
 
 # ---------------------------------------------------------------------------------------
 # Local Search
