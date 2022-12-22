@@ -102,6 +102,10 @@ include:
 exclude:
 ignore:
 
+# 页面加密
+encrypt:
+  enable: true
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
