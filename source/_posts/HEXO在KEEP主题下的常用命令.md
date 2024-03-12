@@ -12,9 +12,11 @@ tags: [Hexo]
 
 创建文件`hexo new [layout] <title>`
 
-hexo g
+生成`hexo g`
 
-版本对应
+启动`hexo s`
+
+## 版本对应
 
 | Hexo 版本   | 最低版本 (Node.js 版本) | 最高版本 (Node.js 版本) |
 | :---------- | :---------------------- | :---------------------- |
@@ -29,11 +31,22 @@ hexo g
 | 3.0 - 3.1   | 0.10 或 iojs            | 未知                    |
 | 0.0.1 - 2.8 | 0.10                    | 未知                    |
 
+# KEEP
+
+安装`npm install hexo-theme-keep`
+
+升级`npm install hexo-theme-keep@latest`
+
 # NVM
 
-```javascript
-nvm install 20.9.0
-nvm list
+```shell
+##可用版本
 nvm list available
+##安装指定版本
+nvm install 20.9.0
+##已安装版本
+nvm list
+##切换版本
 nvm use 14.19.1
 ```
+
