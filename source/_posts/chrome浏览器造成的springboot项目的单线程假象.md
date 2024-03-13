@@ -6,6 +6,6 @@ tags: [技术,踩坑]
 
 
 
-Chrome对同一URL请求进行串行处理，造成SpringBoot项目的单线程假象。
+Chrome对同一URL请求进行串行处理，造成SpringBoot项目的单线程假象
 
 [博客园](https://www.cnblogs.com/anenyang/articles/13878536.html)
